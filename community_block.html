@@ -11,31 +11,34 @@
       text-align: center;
       padding: 40px;
     }
-    img {
-      max-width: 600px;
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2열 */
+      gap: 20px; /* 사진 사이 간격 */
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
       width: 100%;
+      height: auto;
       border-radius: 10px;
-      margin-bottom: 20px;
     }
     .message {
       font-size: 20px;
       line-height: 1.6;
-      white-space: pre-line; /* 줄바꿈 반영 */
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <!-- 첫 번째 이미지 -->
-  <img src="New%20life.png" alt="New Life">
+  <div class="gallery">
+    <img src="New%20life.png" alt="New Life">
+    <img src="Video.jpg" alt="Video">
+  </div>
 
-  <!-- 두 번째 이미지 -->
-  <img src="Video.jpg" alt="Video">
-
-  <!-- 아래 custom message -->
   <div class="message">
     포털사이트의 폐해  
-    쓸데없는 정보가 너무 많다 -> 확인용
+    쓸데없는 정보가 너무 많다
   </div>
 </body>
 </html>
-
